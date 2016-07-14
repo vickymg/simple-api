@@ -7,9 +7,9 @@ var appRouter = function(app) {
   // otherwise, the mock data object is returned
   app.get("/account", function(req, res) {
     var accountMock = {
-      "username": "nraboy",
+      "username": "test",
       "password": "1234",
-      "twitter": "@nraboy"
+      "twitter": "@test"
     }
     if(!req.query.username) {
       return res.send({"status": "error", "message": "missing username"});
